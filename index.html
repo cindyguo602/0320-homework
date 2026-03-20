@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>冒險之旅 - 橫向捲軸遊戲</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <div id="hud">
+            <div class="stat"><span class="label">分數:</span> <span id="score">0</span></div>
+            <div class="stat"><span class="label">生命:</span> <span id="lives">3</span></div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui-overlay" class="hidden">
+            <h1 id="status-title">遊戲結束</h1>
+            <button id="restart-btn">重新開始</button>
+        </div>
+        <div id="controls-hint">
+            使用 <strong>A</strong> / <strong>D</strong> 移動，<strong>空白鍵</strong> 跳躍
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
