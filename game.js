@@ -5,6 +5,10 @@
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 
+// Set explicit dimensions
+canvas.width = 800;
+canvas.height = 600;
+
 // Game Constants
 const GRAVITY = 0.6;
 const FRICTION = 0.8;
@@ -65,6 +69,7 @@ class Player {
         this.velY = 0;
         this.onGround = false;
         this.facingLeft = false;
+        this.color = '#ff4757'; // Fallback color
     }
 
     draw(camera) {
